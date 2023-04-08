@@ -10,7 +10,8 @@
     "lint:fix": "next lint --fix",
     "lint:cache": "next lint --cache",
     "type:check": "tsc -p tsconfig.json --jsx react-jsx --noEmit",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "commit": "cz"
   },
   "dependencies": {
     "@types/node": "18.15.11",
@@ -31,6 +32,12 @@
     "typescript": "5.0.4"
   },
   "devDependencies": {
-    "@types/lodash-es": "^4.17.7"
+    "@types/lodash-es": "^4.17.7",
+    "cz-git": "^1.6.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-git"
+    }
   }
 }
